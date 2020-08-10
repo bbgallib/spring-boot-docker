@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  web:
+    build:
+      # Dockerfile の app のコピーのために必要なパス指定
+      context: ../
+      # context のパスから見た Dockerfile の場所
+      dockerfile: docker/Dockerfile
+    volumes:
+      - /C/Users/kenta/IdeaProjects/spring-boot-docker:/app
+    ports:
+      - "8080:8080"
+      # for remote debug
+      - "5005:5005"
+
+  dbserver:
+    image: mysql
+    volumes:
+      - ../sql:/docker-entrypoint-initdb.d
+      - mysql-db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: sboot
+      MYSQL_PASSWORD: sboot
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  mysql-db:
+    driver: local
