@@ -5,7 +5,7 @@
 ## 実行環境
 ```
 ・Windows10 pro
-・intelliJ Community 2020.02
+・IntelliJ Community 2020.02
 ・Docker Desktop for Windows v19.03.12
 ・docker-compose version 1.26.2
 ・OpenJDK11（Docker上）
@@ -31,4 +31,5 @@ $ docker-compose up
 ```
 
 ## デバッグを取りたい場合
-- 実行構成「REMOTE-DEBUG」をデバッグ起動（5005番ポートでリモートデバッグが起動する）
+- IntelliJ上で実行構成「REMOTE-DEBUG」をデバッグ起動（5005番ポートでリモートデバッグが起動する）
+ https://blogenist.jp/2018/12/04/6786/
