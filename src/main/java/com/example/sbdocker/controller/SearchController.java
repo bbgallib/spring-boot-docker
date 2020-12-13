@@ -20,7 +20,6 @@ public class SearchController {
             @RequestParam(value = "name", required = false) String name,
             @RequestParam(value = "unitName", required = false) String unitName
     ) {
-        List<SearchResponseResource> resources = searchService.selectProfiles(name, unitName);
-        return resources;
+        return searchService.selectProfiles(name, unitName);
     }
 }
