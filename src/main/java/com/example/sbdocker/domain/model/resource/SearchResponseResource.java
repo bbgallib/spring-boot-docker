@@ -11,14 +11,14 @@ public class SearchResponseResource {
     String unitName;
     String age;
     String blood;
-    String birth_day;
-    String zodiac_sign;
+    String birthDay;
+    String zodiacSign;
     String height;
     String weight;
     String bwh;
-    String dominant_hand;
-    String birth_place;
+    String dominantHand;
+    String birthPlace;
     String favorite;
-    String special_skill;
+    String specialSkill;
     String cv;
 }
