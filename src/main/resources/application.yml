@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: localhost
+server:
+  shutdown: graceful
 mybatis:
   mapper-locations:
     - classpath*:/mapper/*.xml
