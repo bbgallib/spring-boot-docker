@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM eclipse-temurin:21-jdk
 
 ENV APP_ROOT /app
 
