@@ -6,7 +6,7 @@
 ```
 ・Java 21
 ・Spring Boot:4.0.1
-・MySQL5.7（Docker上）
+・MySQL8.4（Docker上）
 ・mybatis-spring-boot-starter:3.0.4
 ```
 

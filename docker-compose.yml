@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   dbserver:
-    image: mysql:5.7
+    image: mysql:8.4
     platform: linux/amd64 # M1 Mac対応
     # 文字化け回避のために文字コードを指定
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
