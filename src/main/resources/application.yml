@@ -10,7 +10,9 @@ mybatis:
     map-underscore-to-camel-case: true
 ---
 spring:
-  profiles: localhost
+  config:
+    activate:
+      on-profile: localhost
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mydb
@@ -19,7 +21,9 @@ spring:
 
 ---
 spring:
-  profiles: docker
+  config:
+    activate:
+      on-profile: docker
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://dbserver/mydb

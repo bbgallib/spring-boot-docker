@@ -1,25 +1,8 @@
 version: '3.7'
 
 services:
-  web:
-    build:
-      # Dockerfile の app のコピーのために必要なパス指定
-      context: ./
-      # context のパスから見た Dockerfile の場所
-      dockerfile: docker/Dockerfile
-    volumes:
-      - ~/IdeaProjects/spring-boot-docker:/app
-    ports:
-      - "8080:8080"
-      # for remote debug
-      - "5005:5005"
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://dbserver:3306/mydb?autoReconnect=true&useSSL=false
-    depends_on:
-      - dbserver
-
   dbserver:
-    image: mysql:5.7
+    image: mysql:8.4
     platform: linux/amd64 # M1 Mac対応
     # 文字化け回避のために文字コードを指定
     command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
