@@ -4,7 +4,7 @@
 
 ## 実行環境
 ```
-・Java 21
+・Java 25
 ・Spring Boot:4.0.1
 ・MySQL8.4（Docker上）
 ・mybatis-spring-boot-starter:3.0.4

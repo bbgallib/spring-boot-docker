@@ -9,5 +9,4 @@ class SbDockerApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }

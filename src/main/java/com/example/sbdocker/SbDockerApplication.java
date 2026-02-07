@@ -11,5 +11,4 @@ public class SbDockerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SbDockerApplication.class, args);
     }
-
 }
