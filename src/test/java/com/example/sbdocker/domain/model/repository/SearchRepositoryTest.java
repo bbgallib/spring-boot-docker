@@ -80,4 +80,27 @@ class SearchRepositoryTest {
         assertEquals("A", results.getFirst().getName());
         assertEquals("U1", results.getFirst().getUnitName());
     }
+
+    @Test
+    void selectProfiles_filtersByNameOnly() {
+        List<SearchResponseResource> results = searchRepository.selectProfiles("A", null);
+
+        assertEquals(1, results.size());
+        assertEquals("A", results.getFirst().getName());
+    }
+
+    @Test
+    void selectProfiles_filtersByUnitNameOnly() {
+        List<SearchResponseResource> results = searchRepository.selectProfiles(null, "U2");
+
+        assertEquals(1, results.size());
+        assertEquals("U2", results.getFirst().getUnitName());
+    }
+
+    @Test
+    void selectProfiles_returnsAllWhenNoFilters() {
+        List<SearchResponseResource> results = searchRepository.selectProfiles(null, null);
+
+        assertEquals(2, results.size());
+    }
 }
