@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <profiles
+            id="1"
+            name="A"
+            name_kana="えー"
+            unit_name="U1"
+            age="16"
+            blood="A"
+            birth_day="01/01"
+            zodiac_sign="Capricorn"
+            height="160"
+            weight="50"
+            bwh="80/60/80"
+            dominant_hand="右利き"
+            birth_place="Tokyo"
+            favorite="読書"
+            special_skill="整理整頓"
+            cv="CV-A"/>
+    <profiles
+            id="2"
+            name="B"
+            name_kana="びー"
+            unit_name="U2"
+            age="17"
+            blood="B"
+            birth_day="02/02"
+            zodiac_sign="Aquarius"
+            height="155"
+            weight="45"
+            bwh="78/58/79"
+            dominant_hand="左利き"
+            birth_place="Osaka"
+            favorite="散歩"
+            special_skill="料理"
+            cv="CV-B"/>
+</dataset>
